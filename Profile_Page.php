@@ -61,3 +61,8 @@ if (!isset($_SESSION['name'])){
     </script>
 </body>
 </html>
+<!--
+    git add .
+    git commit -m "profile_page updated"
+    git push
+-->
