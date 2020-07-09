@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 20px;
+	overflow-x: hidden;
+	color: white;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('../assets/img4.jpg');
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.menu {
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+.menu li {
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+}
+
+.menu li a {
+	padding: 5px 0;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+}
+
+.menu li a:hover {
+	border-bottom: 2px solid navy;
+}
+
+.content {
+	width: 1180px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1 {
+	color: white;
+	font-size: 240%;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full {
+	background-color: transparent;
+	color: cyan;
+	margin-right: 15px;
+	border: 1px solid cyan;
+}
+.btn-full:hover {
+	background-color: white;
+}
+
+.btn-nav {
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+}
+.btn-nav:hover {
+	background-color: cyan;
+}
+
+.colorchange {
+	animation: colorchangeadhayayan 1s infinite;
+}
+.logo img {
+	float: left;
+	width: auto;
+	height: 100px;
+}
+
+.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.mobile-icon{
+	display: none;
+	float: right;
+}
+.main {
+	max-width: 1180px;
+	margin: auto;
+}
+
+@keyframes colorchangeadhayayan {
+	0% {
+		color: navy;
+	}
+	25% {
+		color: cyan;
+	}
+	50% {
+		color: skyblue;
+	}
+	75% {
+		color: white;
+	}
+	100% {
+		color: cyan;
+	}
+}
+
+.mobile-icon {
+	float: right;
+	display: none;
+}
+
+@media only screen and (max-width: 1180px) {
+	.content {
+		width: 100%;
+		padding: 0 2%;
+	}
+}
+
+@media only screen and (max-width: 998px) {
+	h1 {
+		font-size: 200%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	h1 {
+		font-size: 180%;
+	}
+
+	.mobile-icon {
+		display: inline-block;
+		color: white;
+		margin-top: 30px;
+		margin-right: 20px;
+	}
+
+	.menu li {
+		display: block;
+		margin-top: 10px;
+    }
+    
+    .menu {
+		float: left;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.btn-full {
+		margin-bottom: 20px;
+	}
+	h1 {
+		font-size: 160%;
+	}
+}
