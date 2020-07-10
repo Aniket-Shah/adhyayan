@@ -11,9 +11,10 @@ ob_start();
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./static/signup.css">
+  <link  rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet" media="screen">
   <link
-			href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap"
 			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
 		/>
 </head>
 <body>
@@ -51,8 +52,8 @@ if (isset($_POST['submit']))//User na submit kiya ya nhi iska liya ya hai
     }
 }
 ?>
-<div class="container" style="max-width: 50%;max-height: 50%;; font-family: 'Cormorant Garamond', serif;">
-  <h2 align="center">Change Your Password</h2>
+<div class="container" style="max-width: 50%;max-height: 50%;	font-family: 'Montserrat', sans-serif;">
+  <h2 align="center" style="color: white;" class="animate__animated animate__backInDown">Change Your Password</h2>
   <form action="" method="POST">
   <p><?php 
     if(isset($_SESSION['passmsg'])){
@@ -61,15 +62,15 @@ if (isset($_POST['submit']))//User na submit kiya ya nhi iska liya ya hai
         echo $_SESSION['passmsg']="";
     }
     ?></p>
-    <div class="form-group">
+    <div class="form-group animate__animated animate__backInDown">
       <label for="pwd"><b>New Password:</b></label>
       <input type="password" class="form-control" placeholder="Enter password" name="pswd" required>
     </div>
-    <div class="form-group">
+    <div class="form-group animate__animated animate__backInDown">
       <label for="cpwd"><b>Comfirm Password:</b></label>
       <input type="password" class="form-control" placeholder="Enter password" name="cpswd" required>
     </div>
-    <button type="submit" name="submit" class="btn btn-full" style="	border: 1px solid black;color:white;">Update Password</button>
+    <button type="submit" name="submit" class="btn btn-full animate__animated animate__backInDown" style="	border: 1px solid black;color:white;">Update Password</button>
   </form>
 </div>
 </body>
