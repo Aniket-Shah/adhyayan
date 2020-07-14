@@ -12,6 +12,7 @@
 <html>
 <head>
   <title>Upload</title>
+  <link rel = "icon" href="assets/ADHYAYAN.png" type = "image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -60,6 +61,7 @@ if (isset($_POST['submit']))//User na submit kiya ya nhi iska liya ya hai
 }
 ?>
 <body>
+  
 <div class="container" style="max-width: 50%; font-family: 'Cormorant Garamond', serif;">
   <p>Click on the "Choose File" button to upload a file:</p>
   <h2 align="center" style="color: white; margin-top:20px;">Upload Books</h2>

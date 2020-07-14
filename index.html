@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>ADHYAYAN</title>
+		<title>
+			ADHYAYAN
+		</title>
+		<link rel = "icon" href="assets/ADHYAYAN.png" type = "image/x-icon"> 
+          
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" type="text/css" href="static/style.css" />
 		<link
 			rel="stylesheet"
-			href="//maxcdn.bootstrapcdn.com/bootstrap/4.7./css/bootstrap.min.css"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		/>
 		<link
 			rel="stylesheet"
@@ -14,10 +18,44 @@
 		/>
 	    <link  rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet" media="screen">
 
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<style>
+body{
+	font-size: 20px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full {
+	background-color: transparent;
+	color: cyan;
+	margin-right: 15px;
+	border: 1px solid cyan;
+}
+.btn-full:hover {
+	background-color: white;
+}
+
+.btn-nav {
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+}
+.btn-nav:hover {
+	background-color: cyan;
+}
+
+
+	</style>
+
 	</head>
 	<body 	style="font-family: 'Montserrat', sans-serif;">
 		<header>
@@ -25,11 +63,10 @@
 				<div class="logo">
 					<img src="assets/ADHYAYAN.png" />
 				</div>
-				<ul class="menu animate__animated animate__backInDown" id="myDIV">
+				<ul class="menu" data-aos="fade-down" data-aos-ease="ease-in-out" class="aos-init aos-animate" id="myDIV">
 					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Download</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="#About">About Us</a></li>
+					<li><a href="#service">Services</a></li>					
 				</ul>
 				<a href="#" class="mobile-icon" onclick="myFunction()"
 					><i class="fa fa-bars"></i
@@ -38,9 +75,89 @@
 			<div class="content">
 				<h1>WELCOME TO <span class="colorchange">ADHYAYAN</span></h1>
 				<a href="login.php" class="btn btn-full">Log In</a>
-				<a href="#" class="btn btn-nav">Show more</a>
+				<a href="Book.php" class="btn btn-nav">Download Books</a>
 			</div>
 		</header>
+		<div id="About" class="container">
+			<div data-aos="fade-up" data-aos-ease="ease-in-out" class="aos-init aos-animate"  class="section-heading" style="text-align: center; padding-top: 10px;">
+				<br>
+				<h2>About us</h2>
+				<hr><h6 style="text-align: center;"><b><i>Adhyayan </i></b>exemplifies the quote,<br>
+					<b><i>"Our job is not to prepare students for something. Our job is to help students prepare themselves for anything"</i></b>
+				</h6>
+			<div class="heading-line">
+				<div class="row" style="text-align: center; word-spacing: 2.3px; text-align: justify; padding-top: 10px;">
+				<p data-aos="fade-up" data-aos-ease="ease-in-out" class="aos-init aos-animate">
+					Just as our body needs exercise to stay healthy, our mind needs <i><b>"Adhyayan" </b></i>to stay healthy and peaceful.</p>
+				<p data-aos="fade-up" data-aos-ease="ease-in-out" class="aos-init aos-animate">Education always takes place under the guidance of good teachers or educators, but <b><i>Pedagogy </i></b> an integral part in the zone of proximal development. 
+				<b><i>"Pedagogy"</i></b> is the art of teaching and it must be oriented not to the yesterday, but to the tomorrow of the child's development by imparting knowledge and<b><i> education </i></b> effectively.
+				</p>
+				<p data-aos="fade-up" data-aos-ease="ease-in-out" class="aos-init aos-animate">
+					<b><i>Education</i></b> is the process of facilitating learning, gaining knowledge, inculcating social and moral values whereas <b><i>Learning</b></i> is synthesizing seemingly divergent ideas through educational methods such as inspiring storytelling, discussion on different issues, modern and ancient teaching & training techniques followed by on-going research. 
+
+					<p data-aos="fade-up" data-aos-ease="ease-in-out" class="aos-init aos-animate">We strongly believe that an <i><b>"Educational Building"</i></b>  is totally supported on <b><i>"Four Pillars"</b></i> - <i>academic skills, social skills, emotional skills and vocational skills.</i></p>
+
+					<p data-aos="fade-up" data-aos-ease="ease-in-out" class="aos-init aos-animate">So here, at <b><i>Adhyayan</b></i> you will experience that how good formative approach works towards the way one thinks, feels or acts, thereby encouraging and advancing their individual learnings.</p>
+				</div>            
+			</div>
+		</div>
+		</div>
+		<div id="service" class="container">
+			<div data-aos="fade-up" data-aos-ease="ease-in-out" class="aos-init aos-animate" class="section-heading-2" style="text-align: center; padding-top: 10px;">
+				<br>
+				<hr/>
+				<h2>Services Provided</h2>
+				<hr/>
+				<div class="heading-line">
+					<div class="row" style="text-align: center; word-spacing: 2.3px; text-align: justify; padding-top: 10px;">
+						<ul>
+						<li data-aos="fade-up" data-aos-ease="ease-in-out" class="aos-init aos-animate"><p><b><i>Online textbooks</i></b> for Maharashtra Board (SSC Board) and CBSE Board.</li></p>
+
+						<li data-aos="fade-up" data-aos-ease="ease-in-out" class="aos-init aos-animate"><p><b><i>Online Classes</i></b> catering the learning needs.</li></p>
+
+						<li data-aos="fade-up" data-aos-ease="ease-in-out" class="aos-init aos-animate"><p><b><i>Online test papers</i></b> for self-improvement.</li></p>
+
+						<li data-aos="fade-up" data-aos-ease="ease-in-out" class="aos-init aos-animate"><p><b><i>Help in homework solutions</i></b>, you may post your home work and get the solutions with in a week.</li></p>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<br/>		
+		<footer style="background-color: black;">     
+			<section id="bottom-widget" class="home-section bg-gray">
+				<div class="container" style="color: white;">
+				  <div class="row">
+					<div class="col-md-6" style="margin-top: 50px; margin-bottom: -20px;">
+					  <div class="contact-widge" style="visibility: visible;text-decoration:none; text-align: center; ">
+						<i class="fa fa-phone fa-4x" style="color: white;"></i>
+						<h5>Call</h5>
+						<p>
+						  ADHYAYAN :  <span><a href="tel:+919321550106" style="color: white;">9321550106</a></span><br>
+						</p>
+					  </div>
+					</div>
+					<div class="col-md-6" style="margin-top: 50px;">
+					  <div class="contact-widget" style="visibility: visible;text-decoration:none; text-align: center;">
+						<i class="fa fa-envelope fa-4x" style="color: white;"></i>
+						<h5>Email us</h5>
+						<p>
+						  <span><a href="mailto:het.adhyayan@gmail.com" style="color: white;">adhyayan@gmail.com</a></span>
+						</p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </section> 			  
+			<div class="credits">    				        
+				<hr style="margin-left: 10%;border: 1px solid whitesmoke; margin-right: 10%;"/>
+				<div class="text" style="color: whitesmoke; background-color: black; text-align: center;">
+					<br/>Designed by <a style="color: white;" href="https://github.com/Aniket-Shah" target="_blank">Aniket Shah</a> and <a style="color: white;" target="_blank" href="https://github.com/mehtaAnsh">Ansh Mehta</a>
+					<br/><br/>
+			  </div>
+			  
+			</div>
+		</footer>
 		<script>
 			function myFunction() {
 				var x = document.getElementById("myDIV");
@@ -51,5 +168,9 @@
 				}
 			}
 		</script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		  </script>
 	</body>
 </html>
